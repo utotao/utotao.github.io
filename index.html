@@ -300,20 +300,33 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Install-npm"><a href="#Install-npm" class="headerlink" title="Install npm"></a>Install npm</h3><p><em><a href="https://nodejs.org/en/" target="_blank" rel="noopener">1.1 download</a></em></p>
+<p><em>1.2 in*stall directly and add environment variables</em></p>
+<h3 id="Create-gitpage"><a href="#Create-gitpage" class="headerlink" title="Create gitpage"></a>Create gitpage</h3><p><em>2.1 create new repo</em></p>
+<p>仓库名称：utotao.github.io，其余保持默认。</p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408498967.png" alt="1585408498967"></p>
+<p><em>2.2 setting -&gt; gitpage theme chose</em></p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408441770.png" alt="1585408441770"></p>
+<h3 id="hexo-configure"><a href="#hexo-configure" class="headerlink" title="hexo configure"></a>hexo configure</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>输出log ：</p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408582672.png" alt="1585408582672"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm audit fix or $ npm audit fix --force</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>输出log ：</p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408728109.png" alt="1585408728109"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm audit</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408821245.png" alt="1585408821245"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585408873053.png" alt="1585408873053"></p>
+<p>重复命令：<code>npm audit fix</code> -&gt; <code>npm audit</code></p>
+<h3 id="Modify-config-yml"><a href="#Modify-config-yml" class="headerlink" title="Modify _config.yml"></a>Modify _config.yml</h3><p>最后位置修改如图：</p>
+<p><img src="C:%5CUsers%5Cztaotao%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585409028737.png" alt="1585409028737"></p>
+<h3 id="Post-blog"><a href="#Post-blog" class="headerlink" title="Post blog"></a>Post blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g;hexo d;</span><br></pre></td></tr></table></figure>
 
+<h3 id="Modify-theme"><a href="#Modify-theme" class="headerlink" title="Modify theme"></a><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Modify theme</a></h3>
           
         
       

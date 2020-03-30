@@ -445,7 +445,26 @@
 <p><img src="/2020/03/29/hexo-install/modify-config.png" alt="1585409028737"></p>
 <h3 id="Post-blog"><a href="#Post-blog" class="headerlink" title="Post blog"></a>Post blog</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g;hexo d;</span><br></pre></td></tr></table></figure>
 
-<h3 id="Modify-theme"><a href="#Modify-theme" class="headerlink" title="Modify theme"></a><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Modify theme</a></h3>
+<h3 id="Modify-theme"><a href="#Modify-theme" class="headerlink" title="Modify theme"></a><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Modify theme</a></h3><h3 id="How-to-insert-picture"><a href="#How-to-insert-picture" class="headerlink" title="How to insert picture"></a><a href="https://blog.csdn.net/Sugar_Rainbow/article/details/57415705?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">How to insert picture</a></h3><p><em>1. modify post_asset_folder on “<strong>_config.yml</strong>“</em></p>
+<p>将<code>post_asset_folder: false</code>改为<code>post_asset_folder: true</code></p>
+<p><em>2. download</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
+
+<p><em>3. insert picture</em></p>
+<p>​    <em>3.1 hexo n “newblog”</em></p>
+<ul>
+<li>生成newblog.md博文时就会在/source/_posts目录下生成newblog的文件夹，将你想在newblog博文中插入的照片放置到这个同名文件夹中即可，图片的命名随意。*</li>
+</ul>
+<p>​    <em>3.2 insert</em></p>
+<ul>
+<li><p>插入格式newblog/picture_name.png</p>
+</li>
+<li><p>public/2020文件夹下的html文件，发现图片链接格式已经被改为：</p>
+<p><img src="/2020/03/29/hexo-install/%5Cimc.png" alt="1585536737439"></p>
+</li>
+</ul>
+<p>​    </p>
+
           
         
       

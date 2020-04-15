@@ -28,13 +28,11 @@
 <meta property="og:site_name" content="utotao&#39;s blog">
 <meta property="og:description" content="文件管理   cat  chmod cmp diff file find                                                                             cat 命令cat 命令用于连接文件并打印到标准输出设备上。 语法格式： 1cat [-AbeEnstTuv] [--help] [--version] fileName">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/04/07/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cat.jpg">
 <meta property="article:published_time" content="2020-04-07T11:08:56.000Z">
-<meta property="article:modified_time" content="2020-04-12T11:02:15.240Z">
+<meta property="article:modified_time" content="2020-04-15T10:08:28.757Z">
 <meta property="article:author" content="zhu taotao">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/07/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/cat.jpg">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -158,7 +156,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文件管理"><span class="post-toc-number">1.</span> <span class="post-toc-text">文件管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-命令"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">cat 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#chmod-命令"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">chmod 命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#r-4，w-2，x-1"><span class="post-toc-number">1.0.2.1.</span> <span class="post-toc-text">r&#x3D;4，w&#x3D;2，x&#x3D;1</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mkdir-命令"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">mkdir 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#rm-命令"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">rm 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mv-命令"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">mv 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cp-命令"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">cp 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#more-命令"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">more 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#find-命令"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">find 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#chmod-命令-1"><span class="post-toc-number">1.0.9.</span> <span class="post-toc-text">chmod 命令</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文件管理"><span class="post-toc-number">1.</span> <span class="post-toc-text">文件管理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cat-命令"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">cat 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#chmod-命令"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">chmod 命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#r-4，w-2，x-1"><span class="post-toc-number">1.0.2.1.</span> <span class="post-toc-text">r&#x3D;4，w&#x3D;2，x&#x3D;1</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#cmp-命令"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">cmp 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#diff-命令"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">diff 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#file-命令"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">file 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#find-命令"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">find 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#more-命令"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">more 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#find-命令-1"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">find 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#chmod-命令-1"><span class="post-toc-number">1.0.9.</span> <span class="post-toc-text">chmod 命令</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -187,10 +185,10 @@
 <tr>
 <th align="center"><a href="#cat">cat </a></th>
 <th align="center"><a href="#chmod">chmod</a></th>
-<th align="center">cmp</th>
-<th align="center">diff</th>
-<th align="center">file</th>
-<th align="center">find</th>
+<th align="center"><a href="#cmp">cmp</a></th>
+<th align="center"><a href="#diff">diff</a></th>
+<th align="center"><a href="#file">file</a></th>
+<th align="center"><a href="#find">find</a></th>
 <th></th>
 <th></th>
 </tr>
@@ -281,15 +279,6 @@
 <p><strong>-A, –show-all</strong>：等价于 -vET。</p>
 <p><strong>-e：</strong>等价于”-vE”选项；</p>
 <p><strong>-t：</strong>等价于”-vT”选项；</p>
-<p><strong>举例：</strong></p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/2020/04/07/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/linux常用命令\cat.jpg" alt="cat" title>
-                </div>
-                <div class="image-caption">cat</div>
-            </figure>
-
 <hr>
 <h3 id="chmod-命令"><a href="#chmod-命令" class="headerlink" title="chmod 命令"></a><span id="chmod">chmod 命令</span></h3><p>Linux/Unix 的文件调用权限分为三级 : <strong>文件拥有者</strong>、<strong>群组</strong>、<strong>其他</strong>。利用 chmod 可以藉以控制文件如何被他人所调用。</p>
 <p><strong>语法格式：</strong></p>
@@ -305,7 +294,28 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a=rwx file 和 chmod 777 file 效果相同</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="mkdir-命令"><a href="#mkdir-命令" class="headerlink" title="mkdir 命令"></a>mkdir 命令</h3><h3 id="rm-命令"><a href="#rm-命令" class="headerlink" title="rm 命令"></a>rm 命令</h3><h3 id="mv-命令"><a href="#mv-命令" class="headerlink" title="mv 命令"></a>mv 命令</h3><h3 id="cp-命令"><a href="#cp-命令" class="headerlink" title="cp 命令"></a>cp 命令</h3><h3 id="more-命令"><a href="#more-命令" class="headerlink" title="more 命令"></a>more 命令</h3><h3 id="find-命令"><a href="#find-命令" class="headerlink" title="find 命令"></a>find 命令</h3><h3 id="chmod-命令-1"><a href="#chmod-命令-1" class="headerlink" title="chmod 命令"></a>chmod 命令</h3>
+<h3 id="cmp-命令"><a href="#cmp-命令" class="headerlink" title="cmp 命令"></a><span id="cmp">cmp 命令</span></h3><p>cmp命令用于比较两个文件<strong>是否有差异</strong>。</p>
+<p><strong>语法：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmp [-clsv][-i &lt;字符数目&gt;][--<span class="built_in">help</span>][第一个文件][第二个文件]</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数：</strong></p>
+<ul>
+<li>-c或–print-chars 　除了标明差异处的十进制字码之外，一并显示该字符所对应字符。</li>
+<li>-i&lt;字符数目&gt;或–ignore-initial=&lt;字符数目&gt; 　指定一个数目。</li>
+<li>-l或–verbose 　标示出所有不一样的地方。</li>
+<li>-s或–quiet或–silent 　不显示错误信息。</li>
+<li>-v或–version 　显示版本信息。</li>
+<li>–help 　在线帮助。</li>
+</ul>
+<p><strong><u>如果文件相同，则不显示消息。如果文件不同，则显示第一个不同的位置。</u></strong></p>
+<hr>
+<h3 id="diff-命令"><a href="#diff-命令" class="headerlink" title="diff 命令"></a><span id="diff">diff 命令</span></h3><p>diff命令用于<strong>比较文件的差异</strong>。</p>
+<p>diff以<strong>逐行的方式</strong>，比较文本文件的异同处。如果指定要比较目录，则diff会比较目录中相同文件名的文件，但不会比较其中子目录。</p>
+<hr>
+<h3 id="file-命令"><a href="#file-命令" class="headerlink" title="file 命令"></a><span id="file">file 命令</span></h3><hr>
+<h3 id="find-命令"><a href="#find-命令" class="headerlink" title="find 命令"></a>find 命令</h3><p>Linux find命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。<strong>如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。</strong></p>
+<hr>
+<h3 id="more-命令"><a href="#more-命令" class="headerlink" title="more 命令"></a>more 命令</h3><h3 id="find-命令-1"><a href="#find-命令-1" class="headerlink" title="find 命令"></a>find 命令</h3><h3 id="chmod-命令-1"><a href="#chmod-命令-1" class="headerlink" title="chmod 命令"></a>chmod 命令</h3>
         </div>
 
         <blockquote class="post-copyright">
@@ -313,7 +323,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-04-12T11:02:15.240Z" itemprop="dateUpdated">2020-04-12 19:02:15</time>
+    Last updated: <time datetime="2020-04-15T10:08:28.757Z" itemprop="dateUpdated">2020-04-15 18:08:28</time>
 </span><br>
 
 
